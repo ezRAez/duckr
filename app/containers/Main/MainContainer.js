@@ -1,8 +1,15 @@
 import React from 'react';
+import { container, innerContainer } from './styles.css';
+import { Navigation } from 'components';
 
-function MainContainer() {
+function MainContainer(props) {
   return (
-    <div>{'Dangit Mom!'}</div>
+    <div className={container}>
+      <Navigation isAuthed={true} />
+      <div className={innerContainer}>
+        {props.children}
+      </div>
+    </div>
   );
 }
 
