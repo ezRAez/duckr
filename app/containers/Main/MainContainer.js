@@ -1,17 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class MainContainer extends Component {
-  static propTypes = {
-    name: React.PropTypes.string,
-  };
-
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <div>Dangit Mom!</div>
-    );
-  }
+function MainContainer() {
+  return (
+    <div>{'Dangit Mom!'}</div>
+  );
 }
+
+export default MainContainer;
