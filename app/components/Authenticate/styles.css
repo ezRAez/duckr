@@ -1,0 +1,11 @@
+.container {
+  composes: centeredContainer from 'sharedStyles/styles.css';
+}
+
+.title {
+  composes: largeHeader from 'sharedStyles/styles.css';
+}
+
+.err {
+  composes: errorMsg from 'sharedStyles/styles.css';
+}
